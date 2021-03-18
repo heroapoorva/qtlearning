@@ -1,13 +1,11 @@
-#include <QtWidgets>
-#include "addressbook.h"
+#include <QApplication>
+#include <QLabel>
 
-//! [main function]
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
+    QLabel hello("Hello world!");
 
-    AddressBook addressBook;
-    addressBook.show();
-
+    hello.show();
     return app.exec();
 }
